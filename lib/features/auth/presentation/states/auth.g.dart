@@ -6,11 +6,11 @@ part of 'auth.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$authHash() => r'a617bf30a3675303b1d4c6860233d2569c3535ed';
+String _$authHash() => r'284368182504d7935353e6211534ad54c5cedb71';
 
 /// See also [Auth].
 @ProviderFor(Auth)
-final authProvider = NotifierProvider<Auth, bool>.internal(
+final authProvider = NotifierProvider<Auth, AppUser>.internal(
   Auth.new,
   name: r'authProvider',
   debugGetCreateSourceHash:
@@ -19,6 +19,6 @@ final authProvider = NotifierProvider<Auth, bool>.internal(
   allTransitiveDependencies: null,
 );
 
-typedef _$Auth = Notifier<bool>;
+typedef _$Auth = Notifier<AppUser>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member
